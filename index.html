@@ -1,65 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome Books with ES6</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <body>
-        <header class="navbar">
-            <div class="container nav-holder">
-                <div class="navbar-brand">
-                    <a class="navbar-brand" href="#">Awesome Books</a>
-                </div>
-                <nav class="menu">
-                    <ul class="menu-list">
-                        <li class="menu-list-item active-menu" id="list">List</li>
-                        <li class="menu-list-item" id="add-it">Add New</li>
-                        <li class="menu-list-item" id="contact-us">Contact</li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main class="main-section">
-            <p id="time"></p>
-            <div class="container book-section ">          
-                <h1 id="list-title">Awesome Books</h1> 
-                <div id="book-list">
-                <!--Booklist added in javascript  -->
-                </div>
-            </div>
-            <div class="container add-book-section hide">          
-                <h1 id="list-title">Add a new Book</h1> 
-                
-                <form id="book-form">
-                        <input type="text" id="title" placeholder="Title" required>
-                    <input type="text" id="author" placeholder="Author" required>
-                    <button type="submit">Add</button>
-                </form>
-            </div>
-            <div class="container contact-section hide">          
-                <h1 id="list-title">Contact Information</h1> 
-                <div class="contact-info ">
-                    <p class="message">Do have any questions or you just want to say "Hello"? <br> You can reach out to us!</p>
-                    <ul class="contact-lists">
-                        <li class="contact-lists-list">Our e-mail: mail@mail.com</li>
-                        <li class="contact-lists-list">Our phone number. 0043586534422</li>
-                        <li class="contact-lists-list">Our address: Streetname 22, 84503 City, Country</li>
-                    </ul>
-                </div>
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="container">
-                <p class="copyright">
-                    Copyright ...
-                </p>
-            </div>
-        </footer>
-    
-    <script src="index.js" type="modules"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Awesome books-ES6</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <nav>
+          <p class="logo">AwesomeBook</p>
+          <ul>
+            <li class="listBtn">List</li>
+            <li class="add-new-btn">Add new</li>
+            <li class="contact">Contact</li>
+          </ul>
+        </nav>
+      </header>
+      <div id="current-date"></div>
+      <div class="book-list-container">
+        <h1>All Awesome books</h1>
+        <div id="book-list"></div>
+      </div>
+
+      <div class="form-container">
+        <h1 class="add-text">Add a new book</h1>
+        <hr class="hr" />
+        <br />
+        <form id="book-form">
+          <input type="text" required placeholder="Title" id="title" /><br />
+          <input type="text" required placeholder="author" id="author" /><br />
+          <button id="add-button" type="submit">Add</button>
+        </form>
+      </div>
+      <section class="contact-info">
+        <h1>Contact Information</h1>
+        <p>Do you have any questions or just you want to say "Hello"?</p>
+        <p>You can reach out to us!</p>
+        <ul>
+          <li>Our Email: mail@mail.com</li>
+          <li>Our Phone Number: +99 0123456789</li>
+          <li>Our Adress: Mountain View, California, United States</li>
+        </ul>
+      </section>
+      <footer>
+        <p>Copyright...</p>
+      </footer>
+    </div>
+    <script src="./index.js" type="module"></script>
+  </body>
 </html>

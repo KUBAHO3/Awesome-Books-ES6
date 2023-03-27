@@ -1,138 +1,132 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  .container {
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-  }
-  
-  #book-list {
-    border: 2px solid black;
-    margin-bottom: 20px;
-  }
-  
-  hr {
-    width: 30%;
-    border: 2px solid black;
-  }
-  
-  .book {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-  }
-  
-  .book:nth-child(odd) {
-    background-color: grey;
-  }
-  
-  .book:nth-child(even) {
-    background-color: rgb(118, 185, 223);
-  }
-  
-  .remove {
-    margin-left: auto;
-    box-shadow: 3px 3px;
-    background-color: rgba(61, 61, 102, 0.5);
-  }
-  
-  .remove:hover {
-    background-color: rgb(255, 255, 0);
-  }
-  
-  #list-title {
-    text-align: center;
-  }
-  
-  #book-form {
-    margin-inline: auto;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  #book-form input {
-    border: 3px solid black;
-    padding: 5px;
-  }
-  
-  #form-title {
-    margin-inline: auto;
-  }
-  
-  button[type="submit"] {
-    align-self: flex-end;
-    border: 2px solid black;
-  }
-  
-  .navbar {
-    border: 1px solid black;
-  }
-  
-  .nav-holder {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .navbar-brand {
-    text-decoration: none;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    font-weight: 700;
-    color: black;
-  }
-  
-  .menu-list {
-    display: flex;
-  }
-  
-  .menu-list-item {
-    list-style: none;
-    font-weight: 700;
-    cursor: pointer;
-  }
-  
-  #add-it {
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-  }
-  
-  .active-menu {
-    color: blue;
-  }
-  
-  .contact-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .footer {
-    border: 1px solid black;
-    bottom: 0;
-    margin-bottom: 5px;
-    position: fixed;
-    width: 98%;
-  }
-  
-  .hide {
-    display: none;
-  }
-  
-  .contact-section {
-    padding: 10% 0 0 0;
-  }
-  
-  #time {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
+body {
+  text-align: center;
+}
+
+.main-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.hr {
+  width: 100px;
+  border: 1px solid gray;
+}
+
+form {
+  width: fit-content;
+  margin: 0 auto;
+  text-align: end;
+}
+
+#book-list {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 2px solid gray;
+}
+
+.book-list-container {
+  display: none;
+}
+
+input {
+  margin-bottom: 10px;
+  width: 300px;
+  padding: 5px;
+}
+
+.bookTitle {
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+span {
+  margin-right: 10px;
+}
+
+.bookList1 {
+  display: flex;
+  position: relative;
+}
+
+.bookList1:nth-child(even) {
+  background: #ccc;
+}
+
+.bookList1:nth-child(odd) {
+  background: #fff;
+}
+
+.delete {
+  position: absolute;
+  right: 20px;
+  top: 20%;
+}
+
+button {
+  padding: 5px;
+}
+
+/* nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid gray;
+  padding: 0 20px;
+  align-items: center;
+  font-size: large;
+}
+
+.logo {
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  margin-left: 10px;
+  border-right: 2px solid gray;
+  padding: 4px 0;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.contact-info p,
+.contact-info li {
+  text-align: start;
+}
+
+nav li:hover {
+  color: blue;
+}
+
+.contact {
+  border: none;
+}
+
+.form-container {
+  display: none;
+}
+
+#current-date {
+  font-size: small;
+  text-align: right;
+  font-weight: 600;
+}
+
+footer {
+  position: absolute;
+  border: 2px solid gray;
+  padding: 0 20px;
+  bottom: 2em;
+  width: 500px;
+  box-sizing: border-box;
+  text-align: start;
+}
+
+.contact-info {
+  display: none;
+  font-size: large;
+}
