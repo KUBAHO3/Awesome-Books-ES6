@@ -1,15 +1,19 @@
-body {
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+hr {
+  width: 30%;
+  border: 2px solid black;
+}
+
+h1 {
   text-align: center;
-}
-
-.main-container {
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.hr {
-  width: 100px;
-  border: 1px solid gray;
 }
 
 form {
@@ -22,10 +26,6 @@ form {
   margin-top: 30px;
   margin-bottom: 30px;
   border: 2px solid gray;
-}
-
-.book-list-container {
-  display: none;
 }
 
 input {
@@ -49,11 +49,11 @@ span {
 }
 
 .bookList1:nth-child(even) {
-  background: #ccc;
+  background: grey;
 }
 
 .bookList1:nth-child(odd) {
-  background: #fff;
+  background: rgb(118, 185, 223);
 }
 
 .delete {
@@ -63,7 +63,13 @@ span {
 }
 
 button {
-  padding: 5px;
+  margin-left: auto;
+  box-shadow: 3px 3px;
+  background-color: rgba(61, 61, 102, 0.5);
+}
+
+button:hover {
+  background-color: rgb(255, 255, 0);
 }
 
 /* nav */
@@ -106,10 +112,6 @@ nav li:hover {
   border: none;
 }
 
-.form-container {
-  display: none;
-}
-
 #current-date {
   font-size: small;
   text-align: right;
@@ -121,12 +123,30 @@ footer {
   border: 2px solid gray;
   padding: 0 20px;
   bottom: 2em;
-  width: 500px;
+  width: 98%;
   box-sizing: border-box;
   text-align: start;
 }
 
 .contact-info {
-  display: none;
   font-size: large;
+  text-align: center;
+}
+
+.info-item {
+  text-align: center;
+  padding-left: 30%;
+}
+
+.info-item-list{
+  padding-left: 35%;
+}
+
+
+.show {
+  display: flex;
+  flex-direction: column;
+}
+.hide {
+  display: none;
 }
